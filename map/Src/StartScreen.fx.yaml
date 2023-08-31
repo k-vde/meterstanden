@@ -7,7 +7,7 @@ StartScreen As screen:
         Text: |-
             ="Meterstanden toevoegen
             "
-        Width: =318
+        Width: =400
         X: =165
         Y: =336
         ZIndex: =1
