@@ -78,7 +78,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/31/2023 10:03:53",
+  "HeaderLastSavedDateTimeUTC": "08/31/2023 10:06:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "02a93a94-2139-412a-b8bf-2cba716c65ff": "\"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/0244f5c9d879437f8649fd1173493b90\"",
@@ -996,7 +996,7 @@
     "GrafiekScreen1": 0,
     "Host": 0,
     "HourValue1": 42,
-    "IconAccept1": 36,
+    "IconAccept1": 34,
     "IconBackarrow1": 18,
     "IconCancel1": 33,
     "iconCheck1": 61,
@@ -1009,7 +1009,7 @@
     "IconSortUpDown1": 4,
     "LblAppName1": 6,
     "LblAppName2": 21,
-    "LblAppName3": 35,
+    "LblAppName3": 36,
     "LblSuccessMsg1": 62,
     "Legend3": 59,
     "LineChart3": 58,
@@ -1037,7 +1037,7 @@
     "TextSearchBox1": 8,
     "Title1": 13,
     "Title4": 57,
-    "UploadedImage1": 34
+    "UploadedImage1": 35
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0
