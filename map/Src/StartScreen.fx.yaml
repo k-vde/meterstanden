@@ -1,0 +1,26 @@
+StartScreen As screen:
+
+    Button1 As button:
+        Height: =105
+        OnSelect: =Navigate(EditScreen1)
+        Size: =24
+        Text: |-
+            ="Meterstanden toevoegen
+            "
+        Width: =318
+        X: =165
+        Y: =336
+        ZIndex: =1
+
+    Button1_1 As button:
+        Height: =105
+        OnSelect: =Navigate(BrowseScreen1)
+        Size: =24
+        Text: |-
+            ="Meterstanden inkijken
+            "
+        Width: =318
+        X: =165
+        Y: =492
+        ZIndex: =2
+

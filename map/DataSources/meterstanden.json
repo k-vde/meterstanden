@@ -1,0 +1,22 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_excel",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-09-15T16:32:55.5270000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "__PowerAppsId__": "Row id",
+      "Datum": "Datum",
+      "meter": "meter",
+      "stand": "stand"
+    },
+    "DatasetName": "b!sS_SAd5Bu0CApUr569PTPbq5SI2a2wtJkc1W_SWyyT_QctZTuGHESZ5S-ZBZBiPe.01OFFGBQ2M2HTP5HBL3ZHIMSHASGZBZ6EB",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "meterstanden",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

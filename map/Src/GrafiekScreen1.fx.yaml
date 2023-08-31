@@ -1,0 +1,36 @@
+GrafiekScreen1 As screen:
+
+    CompositeLineChart3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        Title4 As label:
+            Align: =Align.Center
+            Height: =35
+            Text: ="grafiek meterstanden " + 
+            Width: =619
+            Y: =273
+            ZIndex: =2
+
+        LineChart3 As lineChart:
+            Font: =Font.'Open Sans'
+            Height: =556
+            Items: =Filter(meterstanden,meter = "bakfiets")
+            Width: =619
+            X: =20
+            Y: =308
+            ZIndex: =3
+
+        Legend3 As legend:
+            Height: =111
+            ItemColorSet: =LineChart3.ItemColorSet
+            Items: =LineChart3.SeriesLabels
+            Size: =18
+            Width: =495
+            X: =62
+            Y: =885
+            ZIndex: =4
+

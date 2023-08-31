@@ -1,0 +1,68 @@
+{
+  "02a93a94-2139-412a-b8bf-2cba716c65ff": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive voor Bedrijven",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "9ba52bcc-6f3f-44ac-a940-f084f7681749"
+    ],
+    "id": "02a93a94-2139-412a-b8bf-2cba716c65ff"
+  },
+  "9ba52bcc-6f3f-44ac-a940-f084f7681749": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/excel/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excel",
+      "parameterHints": {
+        "02a93a94-2139-412a-b8bf-2cba716c65ff": {
+          "value": "fileSource"
+        }
+      },
+      "parameterHintsV2": {
+        "fileSource": {
+          "value": "02a93a94-2139-412a-b8bf-2cba716c65ff"
+        }
+      }
+    },
+    "datasets": {
+      "b!sS_SAd5Bu0CApUr569PTPbq5SI2a2wtJkc1W_SWyyT_QctZTuGHESZ5S-ZBZBiPe.01OFFGBQ2M2HTP5HBL3ZHIMSHASGZBZ6EB": {
+        "dataSources": {
+          "meterstanden": {
+            "tableName": "meterstanden"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "meterstanden"
+    ],
+    "dependencies": {
+      "fileSource": "02a93a94-2139-412a-b8bf-2cba716c65ff"
+    },
+    "dependents": [],
+    "id": "9ba52bcc-6f3f-44ac-a940-f084f7681749"
+  },
+  "fd49182c-df43-4d31-9de8-e01ed2d9035f": {
+    "connectionRef": {
+      "displayName": "Ruimtelijke services",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Ruimtelijkeservices"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "fd49182c-df43-4d31-9de8-e01ed2d9035f"
+  }
+}

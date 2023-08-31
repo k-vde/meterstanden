@@ -1,0 +1,18 @@
+Screen1 As screen:
+
+    "Map1 As 'Kaart (preview)'.pcfdataset":
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Compass: =false
+        DisplayMode: =DisplayMode.Edit
+        Height: =1136
+        MapStyle: ='Map.MapStyle'.HighContrastLight
+        PinColor: =RGBA(29, 114, 169, 1)
+        Pitch: =false
+        SatelliteView: =false
+        ShapeDrawing: =true
+        ShapeEditingDeleting: =true
+        Width: =640
+        X: =0
+        Y: =0
+        ZIndex: =1
+
