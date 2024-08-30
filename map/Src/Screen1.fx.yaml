@@ -4,9 +4,14 @@ Screen1 As screen:
     "Map1 As 'Map (preview)'.pcfdataset":
         BorderColor: =RGBA(0, 18, 107, 1)
         Compass: =false
+        CurrentLocation: =false
+        DefaultLatitude: =51.07932
+        DefaultLocation: =true
+        DefaultLongitude: =5.01311
+        DefaultZoomLevel: =16
         DisplayMode: =DisplayMode.Edit
         Height: =1136
-        MapStyle: ='Map.MapStyle'.HighContrastLight
+        MapStyle: ='Map.MapStyle'.Road
         OnItemsChange: =false
         OnLoad: =false
         OnMapClick: =false
@@ -18,8 +23,8 @@ Screen1 As screen:
         PinColor: =RGBA(29, 114, 169, 1)
         Pitch: =false
         SatelliteView: =false
-        ShapeDrawing: =true
-        ShapeEditingDeleting: =true
+        ShapeDrawing: =false
+        ShapeEditingDeleting: =false
         Width: =640
         X: =0
         Y: =0
