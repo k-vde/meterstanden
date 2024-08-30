@@ -1,4 +1,5 @@
 GrafiekScreen1 As screen:
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
     CompositeLineChart3 As group:
         Height: =5
@@ -9,6 +10,9 @@ GrafiekScreen1 As screen:
 
         Title4 As label:
             Align: =Align.Center
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             Height: =35
             Text: ="grafiek meterstanden " + 
             Width: =619
@@ -16,18 +20,37 @@ GrafiekScreen1 As screen:
             ZIndex: =2
 
         LineChart3 As lineChart:
-            Font: =Font.'Open Sans'
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Segoe UI'
             Height: =556
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
             Items: =Filter(meterstanden,meter = "bakfiets")
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            Size: =24
             Width: =619
             X: =20
             Y: =308
             ZIndex: =3
 
         Legend3 As legend:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(220, 220, 220, 1)
+            Font: =Font.'Segoe UI'
             Height: =111
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
             ItemColorSet: =LineChart3.ItemColorSet
             Items: =LineChart3.SeriesLabels
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
             Size: =18
             Width: =495
             X: =62

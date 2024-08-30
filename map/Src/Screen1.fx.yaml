@@ -1,11 +1,20 @@
 Screen1 As screen:
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
-    "Map1 As 'Kaart (preview)'.pcfdataset":
+    "Map1 As 'Map (preview)'.pcfdataset":
         BorderColor: =RGBA(0, 18, 107, 1)
         Compass: =false
         DisplayMode: =DisplayMode.Edit
         Height: =1136
         MapStyle: ='Map.MapStyle'.HighContrastLight
+        OnItemsChange: =false
+        OnLoad: =false
+        OnMapClick: =false
+        OnRouteDirectionChange: =false
+        OnShapeCreated: =false
+        OnShapeDeleted: =false
+        OnShapeEdited: =false
+        OnShapeSelected: =false
         PinColor: =RGBA(29, 114, 169, 1)
         Pitch: =false
         SatelliteView: =false

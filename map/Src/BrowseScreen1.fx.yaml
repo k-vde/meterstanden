@@ -1,12 +1,18 @@
 "BrowseScreen1 As screen.'phoneBrowseLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
 
     RectQuickActionBar1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(73, 130, 5, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
 
     LblAppName1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(58, 58, 58, 0)
+        Font: =Font.'Segoe UI'
         Height: =88
         Size: =27
         Text: ="meterstanden"
@@ -17,6 +23,10 @@
 
     IconRefresh1 As icon.Reload:
         AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
         Height: =88
         Icon: =Icon.Reload
         OnSelect: =Refresh([@meterstanden])
@@ -24,6 +34,7 @@
         PaddingLeft: =22
         PaddingRight: =22
         PaddingTop: =22
+        PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: ="Lijst vernieuwen"
         Width: =88
@@ -32,6 +43,10 @@
 
     IconSortUpDown1 As icon.ArrowsUpDown:
         AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
         Height: =88
         Icon: =Icon.Sort
         OnSelect: |-
@@ -40,6 +55,7 @@
         PaddingLeft: =26
         PaddingRight: =26
         PaddingTop: =26
+        PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: =If(SortDescending1, "Lijst in omgekeerde alfabetische volgorde sorteren", "Lijst in alfabetische volgorde sorteren")
         Width: =88
@@ -48,6 +64,10 @@
 
     IconNewItem1 As icon.Add:
         AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
         DisplayMode: =If(DataSourceInfo([@meterstanden], DataSourceInfo.CreatePermission), DisplayMode.Edit, DisplayMode.Disabled)
         Height: =88
         Icon: =Icon.Add
@@ -56,6 +76,7 @@
         PaddingLeft: =24
         PaddingRight: =24
         PaddingTop: =24
+        PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: ="Nieuw item maken"
         Width: =88
@@ -63,29 +84,53 @@
         ZIndex: =5
 
     TextSearchBox1 As text:
-        Align: =TextPosition.Left
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
         Default: =""
         DelayOutput: =true
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Height: =68
         HintText: ="Naar items zoeken"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
         PaddingLeft: =70
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
         RadiusBottomLeft: =0
-        RadiusBottomRight: =7
+        RadiusBottomRight: =0
         RadiusTopLeft: =0
-        RadiusTopRight: =7
+        RadiusTopRight: =0
         Size: =21
         Width: =Parent.Width
         Y: =RectQuickActionBar1.Height
         ZIndex: =6
 
     SearchIcon1 As icon.Search:
-        Color: =RGBA(191, 190, 190, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(73, 130, 5, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
         Height: =Self.Width
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Search
         PaddingBottom: =14
         PaddingLeft: =14
         PaddingRight: =14
         PaddingTop: =14
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         Tooltip: ="Zoeken"
         Width: =TextSearchBox1.Height
         X: =TextSearchBox1.X
@@ -93,14 +138,18 @@
         ZIndex: =7
 
     Rectangle11 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
         Height: =2
         Width: =Parent.Width
         Y: =TextSearchBox1.Y + TextSearchBox1.Height
         ZIndex: =8
 
     "BrowseGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        '#CopilotOverlayLabel': ="Filtered"
+        BorderColor: =RGBA(166, 166, 166, 1)
         Height: =Parent.Height - Self.Y
-        Items: =Search(meterstanden,TextSearchBox1.Text,"meter")
+        Items: =Search(meterstanden,TextSearchBox1.Text,meter)
         Layout: =Layout.Vertical
         OnSelect: =Navigate(DetailScreen1, ScreenTransition.None)
         ShowScrollbar: =false
@@ -111,12 +160,17 @@
         ZIndex: =9
 
         Title1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =20
             Text: =ThisItem.meter
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
@@ -125,12 +179,16 @@
             ZIndex: =1
 
         Subtitle1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =18
             Text: =ThisItem.stand
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
@@ -140,13 +198,25 @@
 
         NextArrow1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(73, 130, 5, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
             Height: =60
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Tooltip: ="Details van item weergeven"
             Width: =60
@@ -155,6 +225,8 @@
             ZIndex: =3
 
         Separator1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -163,6 +235,10 @@
 
     IconRefresh1_1 As icon.Reload:
         AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
         Height: =88
         Icon: =Icon.Trending
         OnSelect: =Navigate(GrafiekScreen1,ScreenTransition.UnCover)
@@ -170,6 +246,7 @@
         PaddingLeft: =22
         PaddingRight: =22
         PaddingTop: =22
+        PressedFill: =RGBA(0, 0, 0, 0)
         TabIndex: =0
         Tooltip: ="Scherm grafiek"
         Width: =88

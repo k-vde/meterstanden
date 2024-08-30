@@ -1,7 +1,7 @@
 [
   {
     "ApiId": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices",
-    "Name": "Ruimtelijkeservices",
+    "Name": "SpatialServices",
     "ServiceKind": "ConnectedWadl",
     "Type": "ServiceInfo"
   }

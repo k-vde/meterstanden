@@ -1,5 +1,5 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/microsoftspatialservices" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Ruimtelijkeservices" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="Ruimtelijke services">Deze connector is vereist voor de besturingselementen Kaarten en Adresinvoer in Power Apps. Er wordt automatisch een verbinding voor deze connector gemaakt wanneer u deze besturingselementen toevoegt aan uw Power App.</doc>
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/microsoftspatialservices" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="SpatialServices" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Spatial Services">This connector is required by the Maps and Address Input controls in Power Apps. A connection for this connector is automatically created when you add these controls to your Power App.</doc>
   <grammars>
     <jsonTypes targetNamespace="https://europe-002.azure-apim.net/apim/microsoftspatialservices" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="GetClientId_Response_clientId_def" />
@@ -371,7 +371,7 @@
     <resource path="/{connectionId}/providers/Microsoft.PowerApps/scopes/connector/environments/organizationsettings">
       <param style="template" name="connectionId" type="xs:string" required="true" />
       <method siena:requiresAuthentication="true" name="GET" id="GetOrganizationSettings" actionName="GetOrganizationSettings" visibility="internal" siena:isDeprecated="false">
-        <doc title="Haal de organisatie-instellingen op om te bepalen of georuimtelijke functies zijn ingeschakeld&#xA;Retourneert organisatie-instellingen voor georuimtelijke functie." />
+        <doc title="Get organization settings to determine if geospatial features are enabled&#xA;Returns organization settings for geospatial feature." />
         <request />
         <response>
           <representation mediaType="application/json" element="service:GetOrganizationSettings_responses_200_def" />
@@ -381,7 +381,7 @@
     <resource path="/{connectionId}/clientid">
       <param style="template" name="connectionId" type="xs:string" required="true" />
       <method siena:requiresAuthentication="true" name="GET" id="GetClientId" actionName="GetClientId" visibility="internal" siena:isDeprecated="false">
-        <doc title="Client-id&#xA;Client-id" />
+        <doc title="Client ID&#xA;Client ID" />
         <request />
         <response>
           <representation mediaType="application/json" element="service:GetClientId_Response" />
@@ -401,7 +401,7 @@
     <resource path="/{connectionId}/search/fuzzy/json">
       <param style="template" name="connectionId" type="xs:string" required="true" />
       <method siena:requiresAuthentication="true" name="GET" id="GetSearchFuzzyJson" actionName="GetSearchFuzzyJson" visibility="internal" siena:isDeprecated="false">
-        <doc title="Adres in vrije vorm zoeken&#xA;Zoek adres in vrije vorm." />
+        <doc title="Free form address search&#xA;Free form address search." />
         <request>
           <param style="query" name="connectorSet" type="xs:string" />
           <param style="query" name="brandSet" type="xs:string" />
@@ -433,7 +433,7 @@
     <resource path="/{connectionId}/search/address/json">
       <param style="template" name="connectionId" type="xs:string" required="true" />
       <method siena:requiresAuthentication="true" name="GET" id="GetSearchAddressJson" actionName="GetSearchAddressJson" visibility="internal" siena:isDeprecated="false">
-        <doc title="Adres zoeken&#xA;Zoek adres." />
+        <doc title="Address search&#xA;Address search." />
         <request>
           <param style="query" name="subscription-key" type="xs:string" />
           <param style="query" name="api-version" type="xs:string" />
@@ -460,7 +460,7 @@
       <param style="template" name="connectionId" type="xs:string" required="true" />
       <param style="template" name="format" type="xs:string" required="true" />
       <method siena:requiresAuthentication="true" name="GET" id="GetMapTile" actionName="GetMapTile" visibility="internal" siena:isDeprecated="false">
-        <doc title="Kaarttegel ophalen&#xA;Kaarttegel ophalen" />
+        <doc title="Get Map Tile&#xA;Get Map Tile" />
         <request>
           <param style="query" name="subscription-key" type="xs:string" />
           <param style="query" name="api-version" type="xs:string" />
@@ -481,7 +481,7 @@
     <resource path="/{connectionId}/map/tile">
       <param style="template" name="connectionId" type="xs:string" required="true" />
       <method siena:requiresAuthentication="true" name="GET" id="GetMapTileV2" actionName="GetMapTileV2" visibility="internal" siena:isDeprecated="false">
-        <doc title="Kaarttegel V2 ophalen&#xA;Kaarttegel V2 ophalen" />
+        <doc title="Get Map Tile V2&#xA;Get Map Tile V2" />
         <request>
           <param style="query" name="subscription-key" type="xs:string" />
           <param style="query" name="api-version" type="xs:string" required="true" />
@@ -501,7 +501,7 @@
     <resource path="/{connectionId}/geolocation/ip/json">
       <param style="template" name="connectionId" type="xs:string" required="true" />
       <method siena:requiresAuthentication="true" name="GET" id="GetIpToLocation" actionName="GetIpToLocation" visibility="internal" siena:isDeprecated="false">
-        <doc title="Azure Maps-IP naar locatie&#xA;Azure Maps-IP naar locatie" />
+        <doc title="Azure Maps IP to Location&#xA;Azure Maps IP to Location" />
         <request>
           <param style="query" name="subscription-key" type="xs:string" />
           <param style="query" name="api-version" type="xs:string" />
@@ -515,7 +515,7 @@
     <resource path="/{connectionId}/REST/v1/Autosuggest">
       <param style="template" name="connectionId" type="xs:string" required="true" />
       <method siena:requiresAuthentication="true" name="GET" id="BingMapsAutoSuggest" actionName="BingMapsAutoSuggest" visibility="internal" siena:isDeprecated="false">
-        <doc title="Automatische suggestie voor Bing-kaarten&#xA;Automatische suggestie voor Bing-kaarten" />
+        <doc title="Bing Maps AutoSuggest&#xA;Bing Maps AutoSuggest" />
         <request>
           <param style="query" name="query" type="xs:string" required="true" />
           <param style="query" name="key" type="xs:string" />
@@ -537,7 +537,7 @@
       <param style="template" name="connectionId" type="xs:string" required="true" />
       <param style="template" name="point" type="xs:string" required="true" />
       <method siena:requiresAuthentication="true" name="GET" id="BingMapsFindLocationByPoint" actionName="BingMapsFindLocationByPoint" visibility="internal" siena:isDeprecated="false">
-        <doc title="Zoek locatie van Bing-kaarten op punt&#xA;Zoek locatie van Bing-kaarten op punt" />
+        <doc title="Bing Maps Find Location by Point&#xA;Bing Maps Find Location by Point" />
         <request>
           <param style="query" name="key" type="xs:string" />
           <param style="query" name="includeEntityTypes" type="xs:string" />
@@ -553,7 +553,7 @@
     <resource path="/{connectionId}/REST/v1/Locations">
       <param style="template" name="connectionId" type="xs:string" required="true" />
       <method siena:requiresAuthentication="true" name="GET" id="BingMapsFindLocationByQuery" actionName="BingMapsFindLocationByQuery" visibility="internal" siena:isDeprecated="false">
-        <doc title="Zoek locatie van Bing-kaarten op query&#xA;Zoek locatie van Bing-kaarten op query" />
+        <doc title="Bing Maps Find Location by Query&#xA;Bing Maps Find Location by Query" />
         <request>
           <param style="query" name="query" type="xs:string" required="true" />
           <param style="query" name="key" type="xs:string" />

@@ -81,7 +81,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "form",
     "OverridableProperties": {},
-    "Version": "2.4.0"
+    "Version": "2.4.2"
   },
   "formViewer": {
     "CustomGroupControlTemplateName": "",
@@ -95,7 +95,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "formViewer",
     "OverridableProperties": {},
-    "Version": "2.3.2"
+    "Version": "2.3.4"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -109,7 +109,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "gallery",
     "OverridableProperties": {},
-    "Version": "2.13.2"
+    "Version": "2.15.0"
   },
   "galleryTemplate": {
     "CustomGroupControlTemplateName": "",
@@ -190,9 +190,51 @@
     "LastModifiedTimestamp": "0",
     "Name": "image",
     "OverridableProperties": {},
-    "Version": "2.2.2"
+    "Version": "2.2.3"
   },
-  "Kaart (preview)": {
+  "label": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/label",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "label",
+    "OverridableProperties": {},
+    "Version": "2.5.1"
+  },
+  "legend": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/legend",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "legend",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
+  },
+  "lineChart": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/lineChart",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "lineChart",
+    "OverridableProperties": {},
+    "Version": "2.3.0"
+  },
+  "Map (preview)": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
     "Id": "http://microsoft.com/appmagic/powercontrol/Map",
@@ -236,7 +278,7 @@
             }
           ]
         },
-        "Version": "1.334"
+        "Version": "1.343"
       },
       "CenterLocation": {
         "Type": {
@@ -258,7 +300,7 @@
             }
           ]
         },
-        "Version": "1.334"
+        "Version": "1.343"
       },
       "ClickedLocation": {
         "Type": {
@@ -280,7 +322,7 @@
             }
           ]
         },
-        "Version": "1.334"
+        "Version": "1.343"
       },
       "DeletedShape": {
         "Type": {
@@ -326,7 +368,7 @@
             }
           ]
         },
-        "Version": "1.334"
+        "Version": "1.343"
       },
       "GeocodedItems": {
         "Type": {
@@ -360,7 +402,7 @@
             }
           ]
         },
-        "Version": "1.334"
+        "Version": "1.343"
       },
       "RouteDirection": {
         "Type": {
@@ -498,7 +540,7 @@
             }
           ]
         },
-        "Version": "1.334"
+        "Version": "1.343"
       },
       "SelectedShape": {
         "Type": {
@@ -544,7 +586,7 @@
             }
           ]
         },
-        "Version": "1.334"
+        "Version": "1.343"
       }
     },
     "PCFDynamicSchemaForIRRetrieval": {
@@ -577,50 +619,8 @@
         "PCFSkipValidation": false
       }
     },
-    "TemplateDisplayName": "Kaart (preview)",
-    "Version": "1.8.26"
-  },
-  "label": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/label",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "label",
-    "OverridableProperties": {},
-    "Version": "2.5.1"
-  },
-  "legend": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/legend",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "legend",
-    "OverridableProperties": {},
-    "Version": "2.1.0"
-  },
-  "lineChart": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/lineChart",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "lineChart",
-    "OverridableProperties": {},
-    "Version": "2.3.0"
+    "TemplateDisplayName": "Map (preview)",
+    "Version": "1.8.27"
   },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
